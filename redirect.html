@@ -1,0 +1,17 @@
+<!-- redirect.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const url = new URLSearchParams(window.location.search).get('url');
+    if (url) {
+      window.location.href = url;
+    } else {
+      document.body.innerText = "No URL provided.";
+    }
+  </script>
+</head>
+<body></body>
+</html>
